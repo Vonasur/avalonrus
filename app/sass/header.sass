@@ -1,0 +1,39 @@
+$output-bourbon-deprecation-warnings: false !default;
+@import "fonts"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+
+$color: #3981c2
+$dark-color: #225d8b
+$default-font: "OpenSansRegular"
+$light-font: "OpenSansLight"
+$condensed-font: "OpenSansCondensedLight"
+$bold-font: "OpenSansBold"
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	background: url(../img/bg.png)

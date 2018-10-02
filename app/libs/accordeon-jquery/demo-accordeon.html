@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Демо: Меню аккордеон на основе jQuery и CSS3</title>
+<meta name="description" content="Вариант меню аккордеон на основе jQuery и CSS3 с функцией открытия подменю при загрузке" />
+<meta name="keywords" content="аккордеон jQuery, меню аккордеон, css3 accordion" />
+<!-- accordeon css -->
+<link rel="stylesheet" type="text/css" href="accordeon.css" />
+<!-- demo page css -->
+<link href="http://dbmast.ru/files/demo/css/demo.css" rel="stylesheet">
+<style>
+body {
+   background: rgb(217, 217, 217);
+}
+p {
+   color: #3c3c3c;
+}
+</style>
+</head>
+<body>
+<!-- top nav demo page -->
+    <div class="nav-top clearfix">
+        <a href="http://dbmast.ru/"><span>Dobrovoimaster</span></a>
+        <span class="right"><a href="http://dbmast.ru/menyu-akkordeon-na-osnove-jquery-i-css"><span>&laquo; &laquo; Подробнее Изучить Детали</span></a></span>
+    </div>
+    <!-- Заголовок -->
+    <div class="header">
+      <h1>Меню аккордеон на jQuery &amp; CSS3</h1>
+    </div>
+    <!-- container -->
+    <div class="container">
+        <div class="main clearfix">
+		    <!-- Левый блок -->
+            <div class="column">
+               <p>
+                  аккордеон полностью закрыт при загрузке страницы
+               </p>
+               &nbsp;
+               <ul class="menu  collapsible">
+		          <li><a href="#">Рубрики</a>
+			         <ul class="acitem">
+				        <li><a href="#">Рубрика 1</a></li>
+						<li><a href="#">Рубрика 2</a></li>
+						<li><a href="#">Рубрика 3</a></li>
+						<li><a href="#">Рубрика 4</a></li>
+						<li><a href="#">Рубрика 5</a></li>
+						<li><a href="#">Рубрика 6</a></li>
+			         </ul>
+		          </li>
+		          <li><a href="#">Архивы</a>
+			         <ul class="acitem">
+			            <li><a href="#">Январь (10)</a></li>
+						<li><a href="#">Февраль (15)</a></li>
+						<li><a href="#">Март (8)</a></li>
+						<li><a href="#">Апрель (12)</a></li>
+						<li><a href="#">Май (9)</a></li>
+						<li><a href="#">Июнь (4)</a></li>
+			         </ul>
+		          </li>
+		          <li><a href="http://dbmast.ru/">Мой Блог (нет подменю)</a></li>
+		          <li><a href="#">Интересное</a>
+			         <ul class="acitem">
+				        <li><a href="#">Пункт меню 1</a></li>
+						<li><a href="#">Пункт меню 2</a></li>
+						<li><a href="#">Пункт меню 3</a></li>
+						<li><a href="#">Пункт меню 4</a></li>
+						<li><a href="#">Пункт меню 5</a></li>
+						<li><a href="#">Пункт меню 6</a></li>
+			         </ul>
+		          </li>
+		          <li><a href="#">Ссылки</a>
+			         <ul class="acitem">
+				        <li><a href="#">Ссылка 1</a></li>
+						<li><a href="#">Ссылка 2</a></li>
+						<li><a href="#">Ссылка 3</a></li>
+						<li><a href="#">Ссылка 4</a></li>
+						<li><a href="#">Ссылка 5</a></li>
+						<li><a href="#">Ссылка 6</a></li>
+			         </ul>
+		          </li>
+	            </ul>
+            </div>
+			<!-- Конец левого блока -->
+			<!-- Правый блок -->
+            <div class="column">
+            <!-- Один из пунктов раскрыт - класс expand -->
+                <p>
+                  один из пунктов раскрыт при загрузке страницы
+                </p>
+                &nbsp;
+                <ul class="menu">
+		           <li class="expand"><a href="#">Рубрики</a>
+			          <ul class="acitem">
+				        <li><a href="#">Рубрика 1</a></li>
+						<li><a href="#">Рубрика 2</a></li>
+						<li><a href="#">Рубрика 3</a></li>
+						<li><a href="#">Рубрика 4</a></li>
+						<li><a href="#">Рубрика 5</a></li>
+						<li><a href="#">Рубрика 6</a></li>
+			         </ul>
+		           </li>
+		           <li><a href="#">Архивы</a>
+			          <ul class="acitem">
+			            <li><a href="#">Январь (10)</a></li>
+						<li><a href="#">Февраль (15)</a></li>
+						<li><a href="#">Март (8)</a></li>
+						<li><a href="#">Апрель (12)</a></li>
+						<li><a href="#">Май (9)</a></li>
+						<li><a href="#">Июнь (4)</a></li>
+			          </ul>
+		            </li>
+		                <li><a href="http://shurawi.blogspot.com/">Мой Блог (нет подменю)</a></li>
+		            <li><a href="#">Интересное</a>
+			          <ul class="acitem">
+				        <li><a href="#">Пункт меню 1</a></li>
+						<li><a href="#">Пункт меню 2</a></li>
+						<li><a href="#">Пункт меню 3</a></li>
+						<li><a href="#">Пункт меню 4</a></li>
+						<li><a href="#">Пункт меню 5</a></li>
+						<li><a href="#">Пункт меню 6</a></li>
+			          </ul>
+		            </li>
+		            <li><a href="#">Ссылки</a>
+			          <ul class="acitem">
+				        <li><a href="#">Ссылка 1</a></li>
+						<li><a href="#">Ссылка 2</a></li>
+						<li><a href="#">Ссылка 3</a></li>
+						<li><a href="#">Ссылка 4</a></li>
+						<li><a href="#">Ссылка 5</a></li>
+						<li><a href="#">Ссылка 6</a></li>
+			          </ul>
+		            </li>
+	             </ul>
+	        </div>
+			<!-- Конец правого блока -->
+        </div>
+    </div>
+        <p style="text-align:center;">сделано с любовью: <a href="https://twitter.com/#!/dobrovoi" style="text-decoration: none;">@dobrovoi</a> :)</p>
+<!-- актуальная версия jQuery -->
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<!-- исполняемый плагин -->      
+<script src="accordeon.js" type="text/javascript"></script>      
+</body>
+</html>

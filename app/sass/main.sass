@@ -1,0 +1,357 @@
+@import "libs"
+@import "vars"
+@import "../libs/font-awesome/scss/font-awesome"
+@import "../libs/bootstrap/dist/css/bootstrap.min"
+@import "../libs/owl.carousel/dist/assets/owl.carousel.min"
+@import "fonts"
+
+*::-webkit-input-placeholder
+    color: #666
+    opacity: 1
+
+*:-moz-placeholder
+    color: #666
+    opacity: 1
+
+*::-moz-placeholder
+    color: #666
+    opacity: 1
+
+*:-ms-input-placeholder
+    color: #666
+    opacity: 1
+
+
+$color: #3981c2
+$dark-color: #225d8b
+$grey: #c7c7c7
+$default-font: "OpenSansRegular"
+$light-font: "OpenSansLight"
+$condensed-font: "OpenSansCondensedLight"
+$bold-font: "OpenSansBold"
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+    color: #666
+body input:required:valid,
+body textarea:required:valid
+    color: #666
+
+html, body
+    height: 100%
+#page
+    height: 100%
+.wrapper
+    box-sizing: border-box
+    min-height: 100%
+    padding-bottom: 12em
+
+body
+    background: url(../img/bg.png)
+
+.container
+    background-color: #fff
+    border-left: 1px solid $grey
+    border-right: 1px solid $grey
+
+header
+    min-height: 10em
+
+.logo
+    padding-top: 1em
+    img
+        width: 100%
+        height: auto
+
+.phone
+    font-size: 1.4em
+    font-family: $bold-font
+    padding-top: 10px
+    text-align: right
+    .fa
+        color: $color
+        font-size: 24px
+
+nav
+    ul
+        text-align: center
+        list-style: none
+        li
+            display: inline-block
+            margin: 0 0.5em
+            padding: 0.5em 1em
+            &:hover,
+            &.active
+                background-color: darken($color, 10%)
+                transition: all .5s ease-out
+                border: 0
+                text-decoration: none
+
+.text-center
+    text-align: center
+
+.search-form
+    padding-top: 10px
+    padding-bottom: 1em
+    float: right
+    input
+        border: 1px solid $grey
+        height: 36px
+        margin: 0
+        padding: 0.5em
+        color: lighten(#000, 20%)
+        width: 150px
+        transition: all .3s ease-out
+        &:focus
+            width: 250px
+            outline: none
+    button
+        background-color: $color
+        color: #FFF
+        height: 36px
+        border: 1px solid $color
+        padding: 0 1.5em
+        margin-left: -5px
+        &:hover
+            background-color: darken($color, 15%)
+            transition: all .5s ease-out
+        .fa
+            font-size: 18px
+.nav
+    padding: 0
+
+.top-menu
+    background-color: $color
+    height: 48px
+    a
+        color: #FFF
+        font-size: 20px
+        padding: 1.5em 1em
+        &:hover,
+        &:focus
+            text-decoration: none
+
+.mob-menu
+  text-align: center
+
+.mob-menu
+  background: $color
+  font-size: 16px
+  font-weight: bold
+  color: #fff
+  line-height: 40px
+  box-sizing: border-box
+  width: 100%
+  height: 50px
+  padding: 0 50px
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 1
+
+.mob-menu.fixed
+  position: fixed
+  top: 0
+  left: 0
+
+.mob-menu a
+  display: block
+  width: 42px
+  height: 22px
+  padding: 11px
+  position: absolute
+  top: 0
+  left: 0
+  &:before, &:after
+    content: ''
+    display: block
+    background: #fff
+    height: 2px
+  span
+    background: #fff
+    display: block
+    height: 2px
+    margin: 6px 0
+
+.slides
+    width: 100%
+    height: 170px
+    padding: 0
+    &:before
+        content: ''
+        background-color: #000
+        opacity: 0.5
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        position: absolute
+        z-index: 1
+
+    .top-text
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        position: absolute
+        z-index: 3
+        
+        h1
+            color: #FFF
+            text-align: center
+            font-size: 44px
+            font-family: "OpenSansLight"
+  
+
+h1, h2
+    text-transform: uppercase
+h1
+    font-size: 30px
+    font-weight: normal
+h2
+    font-size: 24px
+
+.maincontent
+    height: 100%
+
+aside
+    padding-bottom: 16px
+    ul
+        padding: 0
+        margin: 0
+        list-style-type: none
+        li
+            width: 100%
+            background-color: $color
+            font-size: 20px
+            padding: 0.8em 0.5em
+            border-bottom: 1px solid rgba(255,255,255,0.3)
+            &:hover
+                background-color: darken($color, 10%)
+                transition: all .5s ease-out
+        a
+            color: #FFF
+            &:hover,
+            &:focus,
+            &:active
+                text-decoration: none!important
+                color: #FFF
+
+main
+    padding-bottom: 24px
+    p
+        font-size: 1.2em
+        line-height: 1.4
+        color: #4d4948
+        padding-right: 20px
+    ul li
+        font-size: 1.3em
+        margin: 6px 0
+
+.catalog
+    background-color: $color
+    text-align: center
+    padding-top: 1.5em
+    padding-bottom: 1.5em
+    .catalog-item
+        height: 266px
+        width: 266px
+        margin: 0 auto
+        margin-left: 14px
+        margin-bottom: 14px
+        display: inline-block
+        position: relative
+        &:first-child,
+        &::nth-child(5)
+            margin-left: 0
+        .mask
+            background-color: rgba(#000, 0.5)
+            top: 0
+            left: 0
+            height: 266px
+            width: 266px
+            position: absolute
+            z-index: 3
+            opacity: 0
+            margin: 0 auto
+            h3
+                text-transform: uppercase
+                font-weight: normal
+                font-size: 2em
+                text-align: center
+                opacity: 1
+                z-index: 4
+                color: #FFF
+        &:hover
+            .mask
+                opacity: 1
+                transition: all .5s ease-out
+        img
+            width: 100%
+            height: auto
+
+.footer
+    background-color: #000
+    color: #FFF
+    padding: 1.5em
+    font-size: 1.2em
+    line-height: 2
+    height: 10em
+    margin-top: -10em
+    .fa
+        font-size: 1.5em
+        margin-right: 0.25em
+
+.breadcrumbs
+    background-color: #ededed
+    padding: 0.8em 1em
+    width: 100%
+    a
+        color: $color
+        
+.item-name
+    margin: 1em 0 2.5em 0
+    font-size: 1.2em
+
+.main-img-cont
+    text-align: center
+    
+.main-img
+    width: 360px
+    height: 360px
+    margin-bottom: 2em
+    border: 1px solid $grey
+    
+.gallery
+    img
+        width: 88px
+        height: 88px
+        border: 1px solid $grey
+        cursor: pointer
+        &:hover
+            box-shadow: 0 0 5px rgba(0,0,0,0.5)
+
+.owl-controls
+    z-index: 4
+    margin-top: -5em
+    position: absolute
+    bottom: 1em
+    left: 40%
+    
+.owl-theme .owl-controls .owl-page span
+        background-color: $color
+    
+.menuToggle,
+#menuCheck
+    display: none
+
+.maintable
+    margin: 12px 20px
+    td
+        padding: 14px
+        text-align: center
+        font-weight: bold
+    .fa
+        font-size: 36px
+
+@import "media"
